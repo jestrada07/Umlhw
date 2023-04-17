@@ -11,6 +11,7 @@ then X IS-A Y must make sense.
 Chapter 8: When you don’t want a class to be instantiated (in other words, you don’t want anyone to make a new object of that class type) mark the class with   the abstract keyword. A class that is abstract can have both abstract and concrete methods. Abstract methods have no body. All abstract methods must be implemented in the first concrete subclass in the inheritance tree.
 Methods can be declared with Object arguments and/or return types.
 An interface is like a 100% pure abstract class. It defines only abstract methods.
+
 Chapter 9:
 Instance variables live within the object they belong to, on the heap.
 If the instance variable is a reference to an object, both the reference and the object it refers to are on the Heap. Overloaded constructors means you have more than one constructor in your class. If you don't put a constructor in your class, the compiler will put In a default consnuctor.
