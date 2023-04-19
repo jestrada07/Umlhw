@@ -1,6 +1,6 @@
 package shop;
 
-public class Employee extends Customer {
+public abstract class Employee extends Customer {
     protected final double EMPLOYEE_DISCOUNT = .10;
 
 
@@ -11,6 +11,13 @@ public class Employee extends Customer {
 
 
     }
+    //Abstract method
+    abstract void printEmployeePriceAfterDiscount(Product product);//camelCase
+
+
+
+
+
 
     @Override
     public double calculateDiscount(Product product) {

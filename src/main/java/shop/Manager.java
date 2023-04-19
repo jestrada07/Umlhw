@@ -7,9 +7,10 @@ public class Manager extends Employee {
         super(name,size,product);
     }
 
-
-
-
+    @Override
+    void printEmployeePriceAfterDiscount(Product product) {
+        System.out.println(product.getPrice()- calculateDiscount(product));
+    }
 
 
     @Override

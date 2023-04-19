@@ -1,17 +1,22 @@
 package shop;
 
 public class Student extends Customer {
-    private long studentID;
+    private final long studentID;
+    private static long uniqueID;
     private final double STUDENT_DISCOUNT = 0.05;
 
 
 
 
-    public Student(String name, long studentID, Size size, Product[] products) {
+    public Student(String name, Size size, Product[] products) {
         super(name, size, products);
-        this.studentID = studentID;
+        studentID = ++uniqueID;
 
 
+    }
+
+    public long getStudentID() {
+        return studentID;
     }
 
     @Override

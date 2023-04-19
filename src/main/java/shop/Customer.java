@@ -2,7 +2,7 @@ package shop;
 
 import java.util.Arrays;
 
-public class Customer extends Person implements Discountable{
+public abstract class Customer extends Person implements Discountable{
     private Size size;
     private Product[] products;
 

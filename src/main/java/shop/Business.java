@@ -13,6 +13,11 @@ public class Business implements Discountable {
   }
 
 
+
+
+
+
+
   @Override
   public double calculateDiscount(Product product) {
     return BUSINESS_DISCOUNT * product.getPrice();

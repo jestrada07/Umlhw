@@ -1,5 +1,7 @@
 package shop;
 
+import java.text.DecimalFormat;
+
 public class Main {
 
 
@@ -12,15 +14,16 @@ public class Main {
 
 
         Business business1 = new Business("501 crest rd", product1);
-        Student student1 = new Student("Bobby", 22334, Size.MEDIUM, arrayOfProducts);
+        Student student1 = new Student("Bobby", Size.MEDIUM, arrayOfProducts);
         Manager manager1 = new Manager("Jake", Size.SMALL, arrayOfProducts);
         ShoppingApp.printPersonName(manager1);
         ShoppingApp.printPersonName(student1);
         System.out.println(business1);
 
+
+
         System.out.println(ShoppingApp.isAFit(student1, product3));
 
-        ShoppingApp.calculateTotal(arrayOfProducts);
 
 
 
@@ -28,9 +31,12 @@ public class Main {
 
 
 
-        Discountable[] discountable = {student1,business1, manager1};
 
-        ShoppingApp.printEveryDiscountAvailableForAProduct(discountable, product3);
+        Discountable[] discountableProducts = {student1,business1, manager1};
+
+        ShoppingApp.printEveryDiscountAvailableForAProduct(discountableProducts, product3);
+
+
 
 
 
